@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#fefefe;
+}
+.up{
+    height: 20px;
+    background-color:#D96846;
+    padding: 100px ;
+    border-top-right-radius:50rem;
+    border-bottom-left-radius: 50rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    box-shadow: #706c6a 0px 1rem 0px 0rem;
+}
+#search{
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+    background-color: #fefefe;
+    color: black;
+    
+}
+.link{
+    text-decoration: double;
+    border-bottom: none;
+    padding: 10px;
+    border: #262626 1px darkorange;
+    font-size: 2em;
+    line-height: 1.5em;
+    border-radius: 20px 0px 20px 0px ;
+    color: #fefefe;
+}
+.link:hover{
+    border:2px solid #fefefe;
+    border-radius: 10px;
+}
+.contaner{
+    justify-content: space-evenly;
+}
+.main{
+    display: flex;
+    padding: 2vh 0vh 5vh 0vh;
+    border: #3a3a44 1px solid;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: #706c6a 50px  50px 50px 50px ;
+}
+.product{
+  
+    border: #D96846 2px solid ;
+    padding: 10px ;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #3a3a44;
+}
+.img{
+    left: 5vh;
+    width:  200px;
+    border-radius: 5px;
+}
+.text {
+    color: #fefefe;
+    align-items: center;
+    font-size: 2cap;
+
+}
+.foot{
+    margin-top: 30px;
+    
+    height: 15rem;
+   
+    border-radius: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+    /* opacity: 0.3; */
+.product:hover{
+    width: 550px;
+}
+.links{
+    text-decoration: none;
+    border-bottom: #272524 1px solid;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #272524;
+}
+.links:hover{
+    border: 1px solid black;
+    color:black;
+    background-color:transparent;
+    border-radius: 3vh;
+}
+h1{
+    color: blue;
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    align-items: flex-end;
+}
+hr{
+    width: 80%;
+}
+.im1{
+    width: 25%;
+    color: #262626;
+}

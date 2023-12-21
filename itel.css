@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fefefe;
+}
+
+.up {
+    height: 20px;
+    background-color: #D96846;
+    padding: 100px;
+    border-top-right-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    box-shadow: #706c6a 0px 1rem 0px 0rem;
+}
+
+#search {
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+    background-color: #fefefe;
+    color: black;
+
+}
+
+.link {
+    text-decoration: double;
+    border-bottom: none;
+    padding: 10px;
+    border: #262626 1px darkorange;
+    font-size: 2em;
+    line-height: 1.5em;
+    border-radius: 20px 0px 20px 0px;
+    color: #fefefe;
+}
+
+.link:hover {
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+}
+
+.foot {
+    margin-top: 30px;
+
+    height: 15rem;
+
+    border-radius: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* opacity: 0.3; */
+.product:hover {
+    width: 550px;
+}
+
+.links {
+    text-decoration: none;
+    border-bottom: #272524 1px solid;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #272524;
+}
+
+.links:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    border-radius: 3vh;
+}
+
+
+
+hr {
+    width: 80%;
+}
+
+/* style the phone */
+.img1 {
+    width: 100px;
+}
+
+.img2 {
+    width: 300rem;
+    height: 300rem;
+}
+
+.contener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 15%;
+}
+
+.contenerin {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    top: 0;
+    font: 1rem sans-serif;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+
+}
+
+span {
+    color: red;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+li {
+    text-decoration: none;
+    font-size: 2rem;
+}

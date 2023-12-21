@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+}
+.up {
+    height: 20px;
+    background-color: #D96846;
+    padding: 100px;
+    border-top-right-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: #706c6a 0px 1rem 0px 0rem;
+    display: flex;
+}
+
+.link{
+    text-decoration: double;
+    border-bottom: none;
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #fefefe;
+    background: transparent;
+}
+.link:hover {
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+}
+form {
+    margin: 20rem;
+    padding: 10vh 5vh 10vh 5vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: skyblue;
+    border-radius: 15px;
+    box-shadow: #524d4d 30px 30px;
+    display: none;
+    animation: from infinite linear 5s;
+}
+@keyframes from{
+    0%{
+        top:0%;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 2em;
+    background-color: skyblue;
+}
+
+.input:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+   
+    height: 50px;
+    background-color: black;
+    color: snow;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    background-color: transparent;
+}
+
+#reset {
+    width: 7rem;
+    height: 3rem;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+#submit {
+    width: 7rem;
+    height: 3rem;
+    color: white;
+    background-color: lawngreen;
+    border-radius: 10px;
+    font-size: 2em;
+
+}
+
+p {
+    align-items: center;
+    font-size: 3rem;
+    font-style: oblique;
+    margin-left: 10rem;
+}
+.heading{
+    align-items: center;
+    background-color: transparent;
+    top: 30px;
+    bottom: 50px;
+    left: 50vh;
+    color: blue;
+}
+.btns{
+    font-size: 3rem;
+    background-color:rgb(red, green, blue);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.foot {
+    margin-top: 30px;
+    height: 15rem;
+    border-radius: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.links {
+    text-decoration: none;
+    border-bottom: #272524 1px solid;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #272524;
+}
+.links:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    border-radius: 3vh;
+}
+hr {
+    width: 100%;
+    
+}
