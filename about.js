@@ -7,6 +7,7 @@ button.addEventListener("click",function(){
         form.style.display = 'block'
     }else{
         form.style.display = 'none'
+        body.style.display = 'block'
     }
 })
 // document.addEventListener('click',()=>{

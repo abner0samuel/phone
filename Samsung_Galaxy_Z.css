@@ -6,6 +6,7 @@ body {
 }
 
 .up {
+    display: flex;
     height: 20px;
     background-color: #D96846;
     padding: 100px;
@@ -73,12 +74,6 @@ body {
     border-radius: 3vh;
 }
 
-
-
-hr {
-    width: 80%;
-}
-
 /* style the phone */
 .img1 {
     width: 100px;
@@ -118,4 +113,63 @@ span {
 li {
     text-decoration: none;
     font-size: 2rem;
+}
+@media screen and (max-width:480px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .up {
+        width: 100%;
+        height: 5px;
+        background-color: #D96846;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: #706c6a 0px 1rem 0px 0rem;
+        flex-direction: column;
+    }
+
+    #search {
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .img1,
+    .img2 {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+
+    }
+
+    .link {
+        font-size: 1rem;
+
+    }
+
+    li {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
+    .contener {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .foot {
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+
+    .h {
+        display: flex;
+    }
 }

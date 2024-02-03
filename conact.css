@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 .up {
-    height: 20px;
-    background-color: #D96846;
-    padding: 100px;
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    background-color: blue;
     border-top-right-radius: 50rem;
     border-bottom-left-radius: 50rem;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     margin-bottom: 3rem;
-    box-shadow: #706c6a 0px 1rem 0px 0rem;
-    display: flex;
+    box-shadow: #706c6a 0px 10px 10px 0rem;
 }
 .link {
     
@@ -32,10 +31,7 @@
     border: 2px solid #fefefe;
     border-radius: 10px;
 }
-body{
-    background-image: url("Pixel-7A-Coral-Google-IO-2023-Gear.webp");;
-}
-.para{
+.para,.par,.pa{
     font-size: 3rem;
     font-style: italic;
     top: 50vh;
@@ -61,6 +57,7 @@ body{
 }
 
 .links:hover {
+    padding: 15px;
     border: 1px solid black;
     color: black;
     background-color: transparent;
@@ -82,14 +79,42 @@ hr {
     width: 100px;
     border-radius: 10px;
     background-color: transparent;
+    animation: infinite linear 5s img1;
+}
+@keyframes img1{
+    0%,50%,100%{
+        width: 10px;
+    }
+    30%,60%,80%{
+        width: 100px;
+    }
 }
 .img2{
-    align-items: center;
-    border: 1rem solid black;
-    border-radius: 10px;
+    
+    width:100%;
+    margin: 10% auto;
+    /* margin-left: 25%; */
+    
+    border: 1px solid black;
+    border-radius: 3px;
     display: none;
+    transition: all 3s ease-in-out;
+    animation: linear 5s move;
+}
+/* .img2:hover{
+    width: 100%;
+} */
+@keyframes move {
+    0%{
+        clip-path: circle(30%);
+        transform: matrix(40px);
+    }
+    100%{
+        transform: matrix(100px);
+    }
 }
 form {
+    margin-top:0;
     margin: 20rem;
     padding: 10vh 5vh 10vh 5vh;
     width: 500px;
@@ -98,9 +123,20 @@ form {
     justify-content: center;
     background-color: skyblue;
     border-radius: 15px;
-    box-shadow: #524d4d 30px 30px;
+    box-shadow: #524d4d 30px 30px 50px;
     display: none;
+    animation:from infinite linear 5s;
+    
 }
+@keyframes from {
+    0%{
+        top: -0vh;
+    }
+    100%{
+        top:30vh;
+    }
+
+ }
 .input {
     border: none;
     border-bottom: 2px solid black;
@@ -138,5 +174,58 @@ form {
     background-color: lawngreen;
     border-radius: 10px;
     font-size: 2em;
+
+}
+@media screen  and (max-width:480px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .up {
+        padding: 50px;
+        width: 100%;
+        height: 5px;
+        background-color: blue;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 20px;
+        justify-content:center;
+        align-items: center;
+        box-shadow: #706c6a 0px 1rem 0px 0rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+    .para,.par,.pa{
+        font-size: 2rem;
+    }
+    .btns{
+        font-size: 1rem;
+        padding: 2px 5px;
+        margin-top: 50px;
+        position: absolute;
+    }
+    form{
+        width: 100%;
+        margin: 0;
+        box-shadow:none;
+        margin-bottom: 10vh;
+        
+    }
+    .input{
+        width: 90%;
+        margin-top: 5px;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    hr{
+        width: 100%;
+    }
+    .img2{
+        margin-right:30px;
+        width: 100%;
+
+    }
 
 }
