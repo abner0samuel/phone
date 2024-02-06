@@ -1,3 +1,35 @@
+let search_img = document.querySelector('#search_img')
+let search = document.querySelector('#search')
+
+let search_item = [ ]
+
+search_img.addEventListener('click',()=>{
+    search_item.push(search.value )
+    search.style.placeholder = "search for phones"
+
+    search.value ='  '
+    console.log(search_item);
+    search.style.placeholder = "search for phones"
+
+    localStorage.setItem('myproduce',search_item)
+    let produce1 =localStorage.getItem('myproduce')
+    console.log(produce1);
+    
+
+    if (search_item.toString(search_item) === product[0].key ){
+        phone(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+
+        console.log(product[0]);
+    } else if (search_item.toString(search_item) === product[1].name.value){
+        app(product[1].img1, product[1].name, product[1].li1, product[1].li2, product[1].li3, product[1].li4, product[1].li5, product[1].li6, product[1].li7, product[1].li8, product[1].li9, product[1].li10, product[1].li11, product[1].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+
+    }
+})
+
+
+
+
+
 const btn1= document.querySelector('#btn1');
 const btn2= document.querySelector('#btn2');
 const btn3= document.querySelector('#btn3');
@@ -35,160 +67,6 @@ const num_cart = document.querySelector('.num_cart');
     
 
 // });
-btn2.addEventListener("click", ()=>{
-    num_of_cart()
-    btn2.style.backgroundColor = 'green'
-    btn2.innerText='-'
-
-});
-btn3.addEventListener("click", ()=>{
-    num_of_cart()
-    btn3.style.backgroundColor = 'green'
-    btn3.innerText='-'
-
-});
-btn4.addEventListener("click", () => {
-    num_of_cart()
-    btn4.style.backgroundColor = 'green'
-    btn4.innerText = '-'
-
-});
-btn5.addEventListener("click", ()=>{
-    num_of_cart()
-    btn5.style.backgroundColor = 'green'
-    btn5.innerText='-'
-
-});
-btn6.addEventListener("click", ()=>{
-    num_of_cart()
-    btn6.style.backgroundColor = 'green'
-    btn6.innerText='-'
-
-});
-btn7.addEventListener("click", ()=>{
-    num_of_cart()
-    btn7.style.backgroundColor = 'green'
-    btn7.innerText='-'
-
-});
-btn8.addEventListener("click", ()=>{
-    num_of_cart()
-    btn8.style.backgroundColor = 'green'
-    btn8.innerText='-'
-
-});
-btn9.addEventListener("click", ()=>{
-    num_of_cart()
-    btn9.style.backgroundColor = 'green'
-    btn9.innerText='-'
-
-});
-btn10.addEventListener("click", () => {
-    num_of_cart()
-    btn10.style.backgroundColor = 'green'
-    btn10.innerText = '-'
-
-});
-btn11.addEventListener("click", ()=>{
-    num_of_cart()
-    btn11.style.backgroundColor = 'green'
-    btn11.innerText='-'
-
-});
-btn12.addEventListener("click", ()=>{
-    num_of_cart()
-    btn12.style.backgroundColor = 'green'
-    btn12.innerText='-'
-
-});
-btn13.addEventListener("click", ()=>{
-    num_of_cart()
-    btn13.style.backgroundColor = 'green'
-    btn13.innerText='-'
-
-});
-btn14.addEventListener("click", ()=>{
-    num_of_cart()
-    btn14.style.backgroundColor = 'green'
-    btn14.innerText='-'
-
-});
-btn15.addEventListener("click", () => {
-    num_of_cart()
-    btn15.style.backgroundColor = 'green'
-    btn15.innerText = '-'
-
-});
-btn16.addEventListener("click", () => {
-    num_of_cart()
-    btn16.style.backgroundColor = 'green'
-    btn16.innerText = '-'
-
-});
-btn17.addEventListener("click", ()=>{
-    num_of_cart()
-    btn17.style.backgroundColor = 'green'
-    btn17.innerText='-'
-
-});
-btn18.addEventListener("click", ()=>{
-    num_of_cart()
-    btn18.style.backgroundColor = 'green'
-    btn18.innerText='-'
-});
-btn19.addEventListener("click", ()=>{
-    num_of_cart()
-    btn19.style.backgroundColor = 'green'
-    btn19.innerText='-'
-})
-btn20.addEventListener("click", ()=>{
-    num_of_cart()
-    btn20.style.backgroundColor = 'green'
-    btn20.innerText='-'
-})
-btn21.addEventListener("click", ()=>{
-    num_of_cart()
-    btn21.style.backgroundColor = 'green'
-    btn21.innerText='-'
-})
-btn22.addEventListener("click", ()=>{
-    num_of_cart()
-    btn22.style.backgroundColor = 'green'
-    btn22.innerText='-'
-})
-btn23.addEventListener("click", ()=>{
-    num_of_cart()
-    btn23.style.backgroundColor = 'green'
-    btn23.innerText='-'
-})
-btn24.addEventListener("click", ()=>{
-    num_of_cart()
-    btn24.style.backgroundColor = 'green'
-    btn24.innerText='-'
-})
-btn25.addEventListener("click", ()=>{
-    num_of_cart()
-    btn25.style.backgroundColor = 'green'
-    btn25.innerText='-'
-})
-btn26.addEventListener("click", ()=>{
-    num_of_cart()
-    btn26.style.backgroundColor = 'green'
-    btn26.innerText='-'
-})
-btn27.addEventListener("click", ()=>{
-    num_of_cart()
-    btn27.style.backgroundColor = 'green'
-    btn27.innerTe2btn2t='-'
-})
-function num_of_cart() {
-    function sum(a,b){
-        return a+b
-    }
-    let i = 0
-    i++
-    num_cart.innerText += i
-}
 const button =document.querySelector('.button')
 const btnlightmode =document.querySelector('.btnlightmode');
 const btndarkmode =document.querySelector('.btndarkmode');
@@ -238,14 +116,10 @@ button.addEventListener("click",()=>{
 })
 
 
-
 // import add from "/index2.js";
 // console.log(add(2, 6));
 //create the shoping cart
 function app(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12 ,img2){
-    if (mean.style.display === 'block') {
-        
-        const h1 = document.querySelector('.h1')
         const id = document.createElement('div')
         const img = document.createElement('img')
         const iMg = document.createElement('img')
@@ -266,11 +140,10 @@ function app(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11
         const l12 = document.createElement('li')
         const span = document.createElement('span')
         const button = document.createElement('button');
-        cart.src = 'cart1.jpg'
-        mean.style.display = 'none'
-        new_root.style.display = 'block'
+        
+       
+        // new_root.style.display = 'block'
         new_root.appendChild(id)
-        h1.innerText = 'welcome to our shoping cart'
         id.setAttribute('class', 'one_root')
         id.appendChild(img)
         img.setAttribute('id', 'iimm')
@@ -311,6 +184,23 @@ function app(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11
         cartText.appendChild(button)
         button.innerText='pay'
         button.setAttribute('class','cart_btn')
+}
+
+
+
+const cart = document.querySelector('.cart');
+const mean = document.querySelector('.mean')
+const new_root = document.querySelector('.new_root')
+
+function app1() {
+    if (mean.style.display === 'block') {
+        const h1 = document.querySelector('.h1')
+        cart.src = 'cart1.jpg'
+        mean.style.display = 'none'
+        new_root.style.display = 'block'
+        div_a.style.display = 'none'
+        h1.innerText = 'welcome to our shoping cart'
+
     } else {
         const h1 = document.querySelector('.h1')
         cart.src = 'cart.jpg'
@@ -319,9 +209,10 @@ function app(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11
         h1.innerText = 'looking for the best phones we have it here just for you'
     }
 }
-const cart = document.querySelector('.cart');
-const mean = document.querySelector('.mean')
-const new_root = document.querySelector('.new_root')
+
+cart.addEventListener('click', () => {
+    app1()
+})
 
 // makeing the function for the Media
 const menubutton = document.querySelector('#menu-button');
@@ -346,7 +237,7 @@ menubutton.addEventListener('click',()=>{
 const product = [
     {
         img1: 'apple-iphone-15-plus-6gb-256gb-5g.jpg',
-        name: 'Apple iPhone 15 Plus 6GB+256GB 5G ',
+        name: 'Apple iPhone 15 Plus ',
         li1: 'Availability: In Stock',
         li2: 'SKU: 302442',
         li3: 'Apple iPhone 15 Plus Features',
@@ -354,13 +245,14 @@ const product = [
         li5: 'Display: 6.7-Inch',
         li6: 'Camera: 48MP',
         li7: 'Battery: 3274 mAh',
+        li8: '6GB+256GB 5G ',
         img2: 'apple-iphone-15-plus-6gb-256gb-5g.jpg'
 
 
     },
     {
         img1: 'freeyond-m5a-8gb-256gb.webp',
-        name: 'freeyond M5a 8GB+256GB',
+        name: 'freeyond M5a ',
         li1: '₦140,600.00',
         li2: 'Availability: In Stock',
         li3: 'Freeyond M5a Key Features',
@@ -369,6 +261,7 @@ const product = [
         li6: 'Display: 6.6 inches',
         li7: 'Camera: 50MP',
         li8: 'Battery: Li-Po 5000 mA',
+        li9: '8GB+256GB',
         img2: 'freeyond-m5a-8gb-256gb.webp'
 
     },
@@ -761,14 +654,415 @@ const product = [
     }
 ]
 
-cart.addEventListener('click', () => {
-    app(product[3].img1, product[3].name, product[3].li1, product[3].li2, product[3].li3, product[3].li4, product[3].li5, product[3].li6, product[3].li7, product[3].li8, product[3].li9, product[3].li10, product[3].li11, product[3].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
-})
-btn1.addEventListener("click", () => {
+btn1.addEventListener("dblclick", () => {
+    app(product[23].img1, product[23].name, product[23].li1, product[23].li2, product[23].li3, product[23].li4, product[23].li5, product[23].li6, product[23].li7, product[23].li8, product[23].li9, product[23].li10, product[23].li11, product[23].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+    btn1.style.backgroundColor = 'green'  
+    num_of_cart()
     
-    app(product[20].img1, product[20].name, product[20].li1, product[20].li2, product[20].li3, product[20].li4, product[20].li5, product[20].li6, product[20].li7, product[20].li8, product[20].li9, product[20].li10, product[20].li11, product[20].li12,product[20].img2)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
 
-    btn1.style.backgroundColor = 'green'
+});
+
+btn2.addEventListener("click", () => {
+    num_of_cart()
+    btn2.style.backgroundColor = 'green'
+    app(product[8].img1, product[8].name, product[8].li1, product[8].li2, product[8].li3, product[8].li4, product[8].li5, product[8].li6, product[8].li7, product[8].li8, product[8].li9, product[8].li10, product[8].li11, product[8].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
 
 
 });
+btn3.addEventListener("click", () => {
+    num_of_cart()
+    btn3.style.backgroundColor = 'green'
+    app(product[25].img1, product[25].name, product[25].li1, product[25].li2, product[25].li3, product[25].li4, product[25].li5, product[25].li6, product[25].li7, product[25].li8, product[25].li9, product[25].li10, product[25].li11, product[25].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+
+
+});
+btn4.addEventListener("click", () => {
+    num_of_cart()
+    btn4.style.backgroundColor = 'green'
+    app(product[24].img1, product[24].name, product[24].li1, product[24].li2, product[24].li3, product[24].li4, product[24].li5, product[24].li6, product[24].li7, product[24].li8, product[24].li9, product[24].li10, product[24].li11, product[24].li12)   
+
+});
+btn5.addEventListener("click", () => {
+    num_of_cart()
+    btn5.style.backgroundColor = 'green'
+    app(product[20].img1, product[20].name, product[20].li1, product[20].li2, product[20].li3, product[20].li4, product[20].li5, product[20].li6, product[20].li7, product[20].li8, product[20].li9, product[20].li10, product[20].li11, product[20].li12)   
+
+});
+btn6.addEventListener("click", () => {
+    num_of_cart()
+    btn6.style.backgroundColor = 'green'
+    app(product[14].img1, product[14].name, product[14].li1, product[14].li2, product[14].li3, product[14].li4, product[14].li5, product[14].li6, product[14].li7, product[14].li8, product[14].li9, product[14].li10, product[14].li11, product[14].li12)   
+
+});
+btn7.addEventListener("click", () => {
+    num_of_cart()
+    btn7.style.backgroundColor = 'green'
+    app(product[20].img1, product[20].name, product[20].li1, product[20].li2, product[20].li3, product[20].li4, product[20].li5, product[20].li6, product[20].li7, product[20].li8, product[20].li9, product[20].li10, product[20].li11, product[20].li12)   
+
+});
+btn8.addEventListener("click", () => {
+    num_of_cart()
+    btn8.style.backgroundColor = 'green'
+    app(product[5].img1, product[5].name, product[5].li1, product[5].li2, product[5].li3, product[5].li4, product[5].li5, product[5].li6, product[5].li7, product[5].li8, product[5].li9, product[5].li10, product[5].li11, product[5].li12)   
+
+
+});
+btn9.addEventListener("click", () => {
+    num_of_cart()
+    btn9.style.backgroundColor = 'green'
+    app(product[7].img1, product[7].name, product[7].li1, product[7].li2, product[7].li3, product[7].li4, product[7].li5, product[7].li6, product[7].li7, product[7].li8, product[7].li9, product[7].li10, product[7].li11, product[7].li12)   
+
+
+});
+btn10.addEventListener("click", () => {
+    num_of_cart()
+    btn10.style.backgroundColor = 'green'
+    app(product[16].img1, product[16].name, product[16].li1, product[16].li2, product[16].li3, product[16].li4, product[16].li5, product[16].li6, product[16].li7, product[16].li8, product[16].li9, product[16].li10, product[16].li11, product[16].li12)   
+
+
+});
+btn11.addEventListener("click", () => {
+    num_of_cart()
+    btn11.style.backgroundColor = 'green'
+    app(product[15].img1, product[15].name, product[15].li1, product[15].li2, product[15].li3, product[15].li4, product[15].li5, product[15].li6, product[15].li7, product[15].li8, product[15].li9, product[15].li10, product[15].li11, product[15].li12)   
+
+
+});
+btn12.addEventListener("click", () => {
+    num_of_cart()
+    btn12.style.backgroundColor = 'green'
+    app(product[15].img1, product[15].name, product[15].li1, product[15].li2, product[15].li3, product[15].li4, product[15].li5, product[15].li6, product[15].li7, product[15].li8, product[15].li9, product[15].li10, product[15].li11, product[15].li12)   
+});
+btn13.addEventListener("click", () => {
+    num_of_cart()
+    btn13.style.backgroundColor = 'green'
+    app(product[6].img1, product[6].name, product[6].li1, product[6].li2, product[6].li3, product[6].li4, product[6].li5, product[6].li6, product[6].li7, product[6].li8, product[6].li9, product[6].li10, product[6].li11, product[6].li12)
+
+
+});
+btn14.addEventListener("click", () => {
+    num_of_cart()
+    btn14.style.backgroundColor = 'green'
+    app(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12)   
+
+
+});
+btn15.addEventListener("click", () => {
+    num_of_cart()
+    btn15.style.backgroundColor = 'green'
+    app(product[4].img1, product[4].name, product[4].li1, product[4].li2, product[4].li3, product[4].li4, product[4].li5, product[4].li6, product[4].li7, product[4].li8, product[4].li9, product[4].li10, product[4].li11, product[4].li12)   
+
+
+});
+btn16.addEventListener("click", () => {
+    num_of_cart()
+    btn16.style.backgroundColor = 'green'
+    app(product[11].img1, product[11].name, product[11].li1, product[11].li2, product[11].li3, product[11].li4, product[11].li5, product[11].li6, product[11].li7, product[11].li8, product[11].li9, product[11].li10, product[11].li11, product[11].li12)   
+    app(product[12].img1, product[12].name, product[12].li1, product[12].li2, product[12].li3, product[12].li4, product[12].li5, product[12].li6, product[12].li7, product[12].li8, product[12].li9, product[12].li10, product[12].li11, product[12].li12)   
+
+
+});
+btn17.addEventListener("click", () => {
+    num_of_cart()
+    btn17.style.backgroundColor = 'green'
+    app(product[13].img1, product[13].name, product[13].li1, product[13].li2, product[13].li3, product[13].li4, product[13].li5, product[13].li6, product[13].li7, product[13].li8, product[13].li9, product[13].li10, product[13].li11, product[13].li12)   
+
+
+});
+btn18.addEventListener("click", () => {
+    num_of_cart()
+    btn18.style.backgroundColor = 'green'
+    app(product[3].img1, product[3].name, product[3].li1, product[3].li2, product[3].li3, product[3].li4, product[3].li5, product[3].li6, product[3].li7, product[3].li8, product[3].li9, product[3].li10, product[3].li11, product[3].li12)   
+
+});
+btn19.addEventListener("click", () => {
+    num_of_cart()
+    btn19.style.backgroundColor = 'green'
+    app(product[17].img1, product[17].name, product[17].li1, product[17].li2, product[17].li3, product[17].li4, product[17].li5, product[17].li6, product[17].li7, product[17].li8, product[17].li9, product[17].li10, product[17].li11, product[17].li12)   
+
+})
+btn20.addEventListener("click", () => {
+    num_of_cart()
+    btn20.style.backgroundColor = 'green'
+    app(product[19].img1, product[19].name, product[19].li1, product[19].li2, product[19].li3, product[19].li4, product[19].li5, product[19].li6, product[19].li7, product[19].li8, product[19].li9, product[19].li10, product[19].li11, product[19].li12)   
+
+})
+btn21.addEventListener("click", () => {
+    num_of_cart()
+    btn21.style.backgroundColor = 'green'
+    app(product[18].img1, product[18].name, product[18].li1, product[18].li2, product[18].li3, product[18].li4, product[18].li5, product[18].li6, product[18].li7, product[18].li8, product[18].li9, product[18].li10, product[18].li11, product[18].li12)   
+
+})
+btn22.addEventListener("click", () => {
+    num_of_cart()
+    btn22.style.backgroundColor = 'green'
+    app(product[21].img1, product[21].name, product[21].li1, product[21].li2, product[21].li3, product[21].li4, product[21].li5, product[21].li6, product[21].li7, product[21].li8, product[21].li9, product[21].li10, product[21].li11, product[21].li12)   
+
+})
+btn23.addEventListener("click", () => {
+    num_of_cart()
+    btn23.style.backgroundColor = 'green'
+    app(product[10].img1, product[10].name, product[10].li1, product[10].li2, product[10].li3, product[10].li4, product[10].li5, product[10].li6, product[10].li7, product[10].li8, product[10].li9, product[10].li10, product[10].li11, product[10].li12)   
+})
+btn24.addEventListener("click", () => {
+    num_of_cart()
+    btn24.style.backgroundColor = 'green'
+    app(product[1].img1, product[1].name, product[1].li1, product[1].li2, product[1].li3, product[1].li4, product[1].li5, product[1].li6, product[1].li7, product[1].li8, product[1].li9, product[1].li10, product[1].li11, product[1].li12)   
+
+})
+btn25.addEventListener("click", () => {
+    num_of_cart()
+    btn25.style.backgroundColor = 'green'
+    app(product[9].img1, product[9].name, product[9].li1, product[9].li2, product[9].li3, product[9].li4, product[9].li5, product[9].li6, product[9].li7, product[9].li8, product[9].li9, product[9].li10, product[9].li11, product[9].li12)   
+
+})
+btn26.addEventListener("click", () => {
+    num_of_cart()
+    btn26.style.backgroundColor = 'green'
+    app(product[22].img1, product[22].name, product[22].li1, product[22].li2, product[22].li3, product[22].li4, product[22].li5, product[22].li6, product[22].li7, product[22].li8, product[22].li9, product[22].li10, product[22].li11, product[22].li12)   
+
+})
+btn27.addEventListener("click", () => {
+    num_of_cart()
+    btn27.style.backgroundColor = 'green'
+    app(product[2].img1, product[2].name, product[2].li1, product[2].li2, product[2].li3, product[2].li4, product[2].li5, product[2].li6, product[2].li7, product[2].li8, product[2].li9, product[2].li10, product[2].li11, product[2].li12)   
+
+})
+function num_of_cart() {
+    function sum(a, b) {
+        return a + b
+    }
+    let i = 0
+    i++
+    num_cart.innerText += i
+}
+
+// geting the img 
+const image1 =document.querySelector('#img1')
+const image2 = document.querySelector('#img2')
+const image3 = document.querySelector('#img3')
+const image4 = document.querySelector('#img4')
+const image5 = document.querySelector('#img5')
+const image6 = document.querySelector('#img6')
+const image7 = document.querySelector('#img7')
+const image8 = document.querySelector('#img8')
+const image9 = document.querySelector('#img9')
+const image10 = document.querySelector('#img10')
+const image11= document.querySelector('#img11')
+const image12 = document.querySelector('#img12')
+const image13= document.querySelector('#img13')
+const image14= document.querySelector('#img14')
+const image15= document.querySelector('#img15')
+const image16= document.querySelector('#img16')
+const image17= document.querySelector('#img17')
+const image18= document.querySelector('#img18')
+const image19= document.querySelector('#img19')
+const image20= document.querySelector('#img20')
+const image21= document.querySelector('#img21')
+const image22= document.querySelector('#img22')
+const image23= document.querySelector('#img23')
+const image24= document.querySelector('#img24')
+const image25= document.querySelector('#img25')
+const image26= document.querySelector('#img26')
+const image27 = document.querySelector('#img27')
+const div_a = document.querySelector('.root')
+function app2() {
+    if (mean.style.display === 'block') {
+        const h1 = document.querySelector('.h1')
+        cart.src = 'cart1.jpg'
+        mean.style.display = 'none'
+        div_a.style.display = 'block'
+        h1.innerText = 'welcome to our shoping cart'
+        new_root.style.display = 'none'
+    } else {
+        const h1 = document.querySelector('.h1')
+        cart.src = 'cart.jpg'
+        mean.style.display = 'block'
+        div_a.style.display = 'none'
+        h1.innerText = 'looking for the best phones we have it here just for you'
+    }
+}
+
+function phone(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12, p, img2) {
+    const img1a = document.createElement('img')
+    img1a.setAttribute('class', 'img1')
+    img1a.src = img1
+    const img2a = document.createElement('img')
+    img2a.setAttribute('class', 'img2')
+    img2a.src = img2
+    const div_a = document.querySelector('.root')
+    const div1 = document.createElement('div')
+    div1.setAttribute('class', 'contener')
+    const div2 = document.createElement('div')
+    div2.setAttribute('class', 'contenerin')
+    const div3 = document.createElement('div')
+    div2.setAttribute('class', 'contenerinout')
+    const names = document.createElement('h2')
+    names.setAttribute('class', 'heading')
+
+
+    const ul = document.createElement('ul')
+    const l1 = document.createElement('li')
+    const l2 = document.createElement('li')
+    const l3 = document.createElement('li')
+    const l4 = document.createElement('li')
+    const l5 = document.createElement('li')
+    const l6 = document.createElement('li')
+    const l7 = document.createElement('li')
+    const l8 = document.createElement('li')
+    const l9 = document.createElement('li')
+    const l10 = document.createElement('li')
+    const l11 = document.createElement('li')
+    const l12 = document.createElement('li')
+    const p1 = document.createElement('p')
+    div_a.appendChild(div1)
+    div1.appendChild(img1a)
+    div1.appendChild(div3)
+    div3.appendChild(names)
+    names.innerText = name
+    div3.appendChild(div2)
+    div2.appendChild(ul)
+    ul.appendChild(l1)
+    l1.innerText = li1
+    ul.appendChild(l2)
+    l2.innerText = li2
+    ul.appendChild(l3)
+    l3.innerText = li3
+    ul.appendChild(l4)
+    l4.innerText = li4
+    ul.appendChild(l5)
+    l5.innerText = li5
+    ul.appendChild(l6)
+    l6.innerText = li6
+    ul.appendChild(l7)
+    l7.innerText = li7
+    ul.appendChild(l8)
+    l8.innerText = li8
+    ul.appendChild(l9)
+    l9.innerText = li9
+    ul.appendChild(l10)
+    l10.innerText = li10
+    ul.appendChild(l11)
+    l11.innerText = li11
+    ul.appendChild(l12)
+    l12.innerHTML = li12
+    div2.appendChild(p1)
+    p1.innerText = p
+    div2.appendChild(img2a)
+    
+}
+
+
+
+
+
+
+
+
+
+image1.addEventListener('click',()=>{
+    phone(product[23].img1, product[23].name, product[23].li1, product[23].li2, product[23].li3, product[23].li4, product[23].li5, product[23].li6, product[23].li7, product[23].li8, product[23].li9, product[23].li10, product[23].li11, product[23].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+
+
+})
+image2.addEventListener('click', () => {
+    phone(product[8].img1, product[8].name, product[8].li1, product[8].li2, product[8].li3, product[8].li4, product[8].li5, product[8].li6, product[8].li7, product[8].li8, product[8].li9, product[8].li10, product[8].li11, product[8].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+
+})
+image3.addEventListener('click', () => {
+    phone(product[25].img1, product[25].name, product[25].li1, product[25].li2, product[25].li3, product[25].li4, product[25].li5, product[25].li6, product[25].li7, product[25].li8, product[25].li9, product[25].li10, product[25].li11, product[25].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+
+})
+image4.addEventListener('click', () => {
+   phone(product[24].img1, product[24].name, product[24].li1, product[24].li2, product[24].li3, product[24].li4, product[24].li5, product[24].li6, product[24].li7, product[24].li8, product[24].li9, product[24].li10, product[24].li11, product[24].li12)   
+
+})
+image5.addEventListener('click', () => {
+    phone(product[14].img1, product[14].name, product[14].li1, product[14].li2, product[14].li3, product[14].li4, product[14].li5, product[14].li6, product[14].li7, product[14].li8, product[14].li9, product[14].li10, product[14].li11, product[14].li12)   
+    console.log(5);
+})
+image6.addEventListener('click', () => {
+    phone(product[20].img1, product[20].name, product[20].li1, product[20].li2, product[20].li3, product[20].li4, product[20].li5, product[20].li6, product[20].li7, product[20].li8, product[20].li9, product[20].li10, product[20].li11, product[20].li12)   
+    console.log(6);
+})
+image7.addEventListener('click', () => {
+    phone(product[20].img1, product[20].name, product[20].li1, product[20].li2, product[20].li3, product[20].li4, product[20].li5, product[20].li6, product[20].li7, product[20].li8, product[20].li9, product[20].li10, product[20].li11, product[20].li12)
+})
+image8.addEventListener('click', () => {
+    phone(product[5].img1, product[5].name, product[5].li1, product[5].li2, product[5].li3, product[5].li4, product[5].li5, product[5].li6, product[5].li7, product[5].li8, product[5].li9, product[5].li10, product[5].li11, product[5].li12)   
+})
+image9.addEventListener('click', () => {
+    phone(product[7].img1, product[7].name, product[7].li1, product[7].li2, product[7].li3, product[7].li4, product[7].li5, product[7].li6, product[7].li7, product[7].li8, product[7].li9, product[7].li10, product[7].li11, product[7].li12)   
+
+})
+image10.addEventListener('click', () => {
+    phone(product[16].img1, product[16].name, product[16].li1, product[16].li2, product[16].li3, product[16].li4, product[16].li5, product[16].li6, product[16].li7, product[16].li8, product[16].li9, product[16].li10, product[16].li11, product[16].li12)   
+
+})
+image11.addEventListener('click', () => {
+    phone(product[15].img1, product[15].name, product[15].li1, product[15].li2, product[15].li3, product[15].li4, product[15].li5, product[15].li6, product[15].li7, product[15].li8, product[15].li9, product[15].li10, product[15].li11, product[15].li12)   
+
+})
+image12.addEventListener('click', () => {
+    phone(product[15].img1, product[15].name, product[15].li1, product[15].li2, product[15].li3, product[15].li4, product[15].li5, product[15].li6, product[15].li7, product[15].li8, product[15].li9, product[15].li10, product[15].li11, product[15].li12)   
+
+})
+image13.addEventListener('click', () => {
+    phone(product[6].img1, product[6].name, product[6].li1, product[6].li2, product[6].li3, product[6].li4, product[6].li5, product[6].li6, product[6].li7, product[6].li8, product[6].li9, product[6].li10, product[6].li11, product[6].li12)
+
+})
+image14.addEventListener('click', () => {
+    phone(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12)   
+})
+image15.addEventListener('click', () => {
+    phone(product[4].img1, product[4].name, product[4].li1, product[4].li2, product[4].li3, product[4].li4, product[4].li5, product[4].li6, product[4].li7, product[4].li8, product[4].li9, product[4].li10, product[4].li11, product[4].li12)   
+
+})
+image16.addEventListener('click', () => {
+    phone(product[11].img1, product[11].name, product[11].li1, product[11].li2, product[11].li3, product[11].li4, product[11].li5, product[11].li6, product[11].li7, product[11].li8, product[11].li9, product[11].li10, product[11].li11, product[11].li12)
+    phone(product[12].img1, product[12].name, product[12].li1, product[12].li2, product[12].li3, product[12].li4, product[12].li5, product[12].li6, product[12].li7, product[12].li8, product[12].li9, product[12].li10, product[12].li11, product[12].li12)   
+
+})
+image17.addEventListener('click', () => {
+    phone(product[13].img1, product[13].name, product[13].li1, product[13].li2, product[13].li3, product[13].li4, product[13].li5, product[13].li6, product[13].li7, product[13].li8, product[13].li9, product[13].li10, product[13].li11, product[13].li12)   
+
+})
+image18.addEventListener('click', () => {
+    phone(product[3].img1, product[3].name, product[3].li1, product[3].li2, product[3].li3, product[3].li4, product[3].li5, product[3].li6, product[3].li7, product[3].li8, product[3].li9, product[3].li10, product[3].li11, product[3].li12)   
+
+})
+image19.addEventListener('click', () => {
+    phone(product[17].img1, product[17].name, product[17].li1, product[17].li2, product[17].li3, product[17].li4, product[17].li5, product[17].li6, product[17].li7, product[17].li8, product[17].li9, product[17].li10, product[17].li11, product[17].li12)   
+
+})
+image20.addEventListener('click', () => {
+    phone(product[19].img1, product[19].name, product[19].li1, product[19].li2, product[19].li3, product[19].li4, product[19].li5, product[19].li6, product[19].li7, product[19].li8, product[19].li9, product[19].li10, product[19].li11, product[19].li12)   
+
+})
+image21.addEventListener('click', () => {
+    phone(product[18].img1, product[18].name, product[18].li1, product[18].li2, product[18].li3, product[18].li4, product[18].li5, product[18].li6, product[18].li7, product[18].li8, product[18].li9, product[18].li10, product[18].li11, product[18].li12)   
+
+})
+image22.addEventListener('click', () => {
+    phone(product[21].img1, product[21].name, product[21].li1, product[21].li2, product[21].li3, product[21].li4, product[21].li5, product[21].li6, product[21].li7, product[21].li8, product[21].li9, product[21].li10, product[21].li11, product[21].li12)   
+
+})
+image23.addEventListener('click', () => {
+    phone(product[10].img1, product[10].name, product[10].li1, product[10].li2, product[10].li3, product[10].li4, product[10].li5, product[10].li6, product[10].li7, product[10].li8, product[10].li9, product[10].li10, product[10].li11, product[10].li12)   
+
+})
+image24.addEventListener('click', () => {
+    phone(product[1].img1, product[1].name, product[1].li1, product[1].li2, product[1].li3, product[1].li4, product[1].li5, product[1].li6, product[1].li7, product[1].li8, product[1].li9, product[1].li10, product[1].li11, product[1].li12)   
+
+})
+image25.addEventListener('click', () => {
+    phone(product[9].img1, product[9].name, product[9].li1, product[9].li2, product[9].li3, product[9].li4, product[9].li5, product[9].li6, product[9].li7, product[9].li8, product[9].li9, product[9].li10, product[9].li11, product[9].li12)   
+
+})
+image26.addEventListener('click', () => {
+    phone(product[22].img1, product[22].name, product[22].li1, product[22].li2, product[22].li3, product[22].li4, product[22].li5, product[22].li6, product[22].li7, product[22].li8, product[22].li9, product[22].li10, product[22].li11, product[22].li12)   
+
+})
+image27.addEventListener('click',()=>{
+    phone(product[22].img1, product[22].name, product[22].li1, product[22].li2, product[22].li3, product[22].li4, product[22].li5, product[22].li6, product[22].li7, product[22].li8, product[22].li9, product[22].li10, product[22].li11, product[22].li12)   
+})

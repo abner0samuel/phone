@@ -37,6 +37,10 @@ body {
     rotate: -50deg;
 
 }
+#search::placeholder{
+    color: #0940f7fb;
+    padding-left: 5px;
+}
 
 #menu-button,
 .menu-button-span {
@@ -262,8 +266,14 @@ li {
     -webkit-text-stroke-width: 2px;
 }
 
-.he3 {
+.he3{
     display: flex;
+    justify-content: space-between;
+}
+.h4 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -448,6 +458,14 @@ a {
         transform: rotatey(3460deg);
     }
 }
+
+
+
+/* styleigng the phone  */
+/* .phone_contener{
+    width: 20vmin;
+    height: 15vmin;
+} */
 
 @media screen and (max-width:480px) {
     * {

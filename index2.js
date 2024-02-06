@@ -1,63 +1,72 @@
-const img1 =document.createElement('img')
-img1.setAttribute('class','img1')
-const img2 = document.createElement('img')
-img2.setAttribute('class', 'img2')
-const div_a = document.querySelector('.root1')
-const div1 = document.createElement('div')
-div1.setAttribute('class','contener')
-const div2 = document.createElement('div')
-div2.setAttribute('class', 'contenerin')
-const name= document.createElement('h2')
-name.setAttribute('class','heading')
+function phone (img1,name,li1,li2,li3,li4,li5,li6,li7,li8,li9,li10,li11,li12,p,img2){
+    const img1a = document.createElement('img')
+    img1a.setAttribute('class', 'img1')
+    img1a.src = img1
+    const img2a = document.createElement('img')
+    img2a.setAttribute('class', 'img2')
+    img2a.src = img2
+    const div_a = document.querySelector('.root')
+    const div1 = document.createElement('div')
+    div1.setAttribute('class', 'contener')
+    const div2 = document.createElement('div')
+    div2.setAttribute('class', 'contenerin')
+    const div3 = document.createElement('div')
+    div2.setAttribute('class', 'contenerinout')
+    const names = document.createElement('h2')
+    names.setAttribute('class', 'heading')
 
 
-const ul = document.createElement('ul')
-const li1 = document.createElement('li')
-const li2 = document.createElement('li')
-const li3 = document.createElement('li')
-const li4 = document.createElement('li')
-const li5= document.createElement('li')
-const li6 = document.createElement('li')
-const li7 = document.createElement('li')
-const li8 = document.createElement('li')
-const li9 = document.createElement('li')
-const li10 = document.createElement('li')
-const li11 = document.createElement('li')
-const li12 = document.createElement('li')
-const btn =document.createElement('button')
-const btn2 = document.createElement('button')
-const p = document.createElement('p')
-div_a.appendChild(div1)
-div1.appendChild(img1)
-div1.appendChild(div2)
-div2.appendChild(name)
-div2.appendChild(ul)
-ul.appendChild(li1)
-ul.appendChild(li2)
-ul.appendChild(li3)
-ul.appendChild(li4)
-ul.appendChild(li5)
-ul.appendChild(li6)
-ul.appendChild(li7)
-ul.appendChild(li8)
-ul.appendChild(li9)
-ul.appendChild(li10)
-ul.appendChild(li11)
-ul.appendChild(li12)
-div1.appendChild(btn)
-div1.appendChild(btn2)
-div1.appendChild(p)
-div1.appendChild(img2)
-btn.innerText ='click'
-btn2.innerText ='ok'
-
-
-
-
-function add(a,b){
-    return a+b
+    const ul = document.createElement('ul')
+    const l1 = document.createElement('li')
+    const l2 = document.createElement('li')
+    const l3 = document.createElement('li')
+    const l4 = document.createElement('li')
+    const l5 = document.createElement('li')
+    const l6 = document.createElement('li')
+    const l7 = document.createElement('li')
+    const l8 = document.createElement('li')
+    const l9 = document.createElement('li')
+    const l10 = document.createElement('li')
+    const l11 = document.createElement('li')
+    const l12 = document.createElement('li')
+    const p1 = document.createElement('p')
+    div_a.appendChild(div1)
+    div1.appendChild(img1a)
+    div1.appendChild(div3)
+    div3.appendChild(names)
+    names.innerText = name
+    div3.appendChild(div2)
+    div2.appendChild(ul)
+    ul.appendChild(l1)
+    l1.innerText = li1
+    ul.appendChild(l2)
+    l2.innerText=li2
+    ul.appendChild(l3)
+    l3.innerText = li3
+    ul.appendChild(l4)
+    l4.innerText =li4
+    ul.appendChild(l5)
+    l5.innerText = li5
+    ul.appendChild(l6)
+    l6.innerText = li6
+    ul.appendChild(l7)
+    l7.innerText = li7
+    ul.appendChild(l8)
+    l8.innerText = li8
+    ul.appendChild(l9)
+    l9.innerText = li9
+    ul.appendChild(l10)
+    l10.innerText = li10
+    ul.appendChild(l11)
+    l11.innerText = li11
+    ul.appendChild(l12)
+    l12.innerHTML = li12
+    div2.appendChild(p1)
+    p1.innerText= p
+    div2.appendChild(img2a)
 }
-export default add
+export default phone
+
 
 
 const product =[
@@ -152,8 +161,7 @@ const product =[
         p: `   Delivery Period: Delivery to locations in Lagos is within 24 hours after payment confirmation. Other states are
                 within
                 3–5 business days`,
-        img2:'shopping (1).webp'
-
+        img2: 'shopping (1).webp',
     }, 
     {
         img1: 'itel-a04-2gb-32gb.webp',
@@ -317,7 +325,7 @@ const product =[
         li3: 'SKU: 300911',
         li4: 'Samsung Galaxy A13',
         li5: 'Display: 6.5 inches',
-        li6: 'Processor: Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55</li>',
+        li6: 'Processor: Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55',
         li7: 'Camera: 50 MP',
         li8: 'Battery: Li-Po 5000 mAh, non-removable',
         li9: 'Network: GSM / HSPA / LTE',
@@ -477,105 +485,58 @@ const product =[
 ]
 
 
-console.log(product.length);
-btn2.addEventListener('click',()=>{
-    img1.src = product[0].img1;
-    name.innerText = product[0].name;
-    li1.innerText = product[0].li1;
-    li2.innerText = product[0].li2;
-    li3.innerText = product[0].li3;
-    li4.innerText = product[0].li4;
-    li5.innerText = product[0].li5;
-    li6.innerText = product[0].li6;
-    li7.innerText = product[0].li7;
-    li8.innerText = product[0].li8;
-    li9.innerText = product[0].li9;
-    li10.innerText = product[0].li10;
-    li11.innerText = product[0].li11;
-    li12.innerText = product[0].li12;
-    p.innerText = product[0].p;
-    img2.src = product[0].img2;
+
+// btn2.addEventListener('click',()=>{
+//     img1.src = product[0].img1;
+//     name.innerText = product[0].name;
+//     li1.innerText = product[0].li1;
+//     li2.innerText = product[0].li2;
+//     li3.innerText = product[0].li3;
+//     li4.innerText = product[0].li4;
+//     li5.innerText = product[0].li5;
+//     li6.innerText = product[0].li6;
+//     li7.innerText = product[0].li7;
+//     li8.innerText = product[0].li8;
+//     li9.innerText = product[0].li9;
+//     li10.innerText = product[0].li10;
+//     li11.innerText = product[0].li11;
+//     li12.innerText = product[0].li12;
+//     p.innerText = product[0].p;
+//     img2.src = product[0].img2;
    
-})
-btn.addEventListener('click',()=>{
-    let random = Math.floor(Math.random()*product.length)
-    img1.src = product[random].img1;
-    name.innerText = product[random].name;
-    li1.innerText =product[random].li1;
-    li2.innerText = product[random].li2; 
-    li3.innerText = product[random].li3;
-    li4.innerText = product[random].li4;
-    li5.innerText = product[random].li5;
-    li6.innerText = product[random].li6;
-    li7.innerText = product[random].li7;
-    li8.innerText = product[random].li8;
-    li9.innerText = product[random].li9;
-    li10.innerText = product[random].li10;
-    li11.innerText = product[random].li11;
-    li12.innerText = product[random].li12;
-    p.innerText = product[random].p;
-    img2.src = product[random].img2;
-    console.log(product[0]);
-    if (li5.innerText === undefined || li6.innerText === undefined || li7.innerText === undefined || li8.innerText === undefined || li9.innerText === undefined || li10.innerText === undefined || li11.innerText === undefined || li12.innerText === undefined){
-        li5.style.display= 'none'
-        li6.style.display = 'none'
-        li7.style.display = 'none'
-        li8.style.display = 'none'
-        li9.style.display = 'none'
-        li10.style.display = 'none'
-        li11.style.display = 'none'
-        li12.style.display = 'none'
-    }
-
-})
-
-// const button = document.querySelector('.button')
-// const btnlightmode = document.querySelector('.btnlightmode');
-// const btndarkmode = document.querySelector('.btndarkmode');
-// const body = document.querySelector(".body")
-// const link1 = document.querySelector('#link1')
-// const link2 = document.querySelector('#link2')
-// const link3 = document.querySelector('#link3')
-// const link4 = document.querySelector('#link4')
-// const link5 = document.querySelector('#link3')
-// const link_link1 = document.querySelector('#link_link1')
-// const link_link2 = document.querySelector('#link_link2')
-// const link_link3 = document.querySelector('#link_link3')
-// const link_link4 = document.querySelector('#link_link4')
-// button.addEventListener("click", () => {
-
-//     if (body.style.backgroundColor === 'white') {
-//         body.style.backgroundColor = 'hwb(240 0% 97% / 0.911)'
-//         btndarkmode.style.display = 'none'
-//         btnlightmode.style.display = 'block'
-//         button.style.backgroundColor = 'black'
-//         link1.style.color = 'white'
-//         link2.style.color = 'white'
-//         link3.style.color = 'white'
-//         link4.style.color = 'white'
-//         link5.style.color = 'white'
-//         link_link1.style.color = 'black'
-//         link_link2.style.color = 'black'
-//         link_link3.style.color = 'black'
-//         link_link4.style.color = 'black'
-//         h4.style.backgroundColor = 'blue'
-//     } else {
-//         body.style.backgroundColor = 'white'
-//         btnlightmode.style.display = 'none'
-//         btndarkmode.style.display = 'block'
-//         button.style.backgroundColor = 'white'
-//         link1.style.color = 'black'
-//         link2.style.color = 'black'
-//         link3.style.color = 'black'
-//         link4.style.color = 'black'
-//         link5.style.color = 'black'
-//         link_link1.style.color = 'white'
-//         link_link2.style.color = 'white'
-//         link_link3.style.color = 'white'
-//         link_link4.style.color = 'white'
-//         menubutton.style.backgroundColor = 'white'
-//     }
 // })
+// btn.addEventListener('click',()=>{
+//     let random = Math.floor(Math.random()*product.length)
+//     img1.src = product[random].img1;
+//     name.innerText = product[random].name;
+//     li1.innerText =product[random].li1;
+//     li2.innerText = product[random].li2; 
+//     li3.innerText = product[random].li3;
+//     li4.innerText = product[random].li4;
+//     li5.innerText = product[random].li5;
+//     li6.innerText = product[random].li6;
+//     li7.innerText = product[random].li7;
+//     li8.innerText = product[random].li8;
+//     li9.innerText = product[random].li9;
+//     li10.innerText = product[random].li10;
+//     li11.innerText = product[random].li11;
+//     li12.innerText = product[random].li12;
+//     p.innerText = product[random].p;
+//     img2.src = product[random].img2;
+//     console.log(product[0]);
+//     if (li5.innerText === undefined || li6.innerText === undefined || li7.innerText === undefined || li8.innerText === undefined || li9.innerText === undefined || li10.innerText === undefined || li11.innerText === undefined || li12.innerText === undefined){
+//         li5.style.display= 'none'
+//         li6.style.display = 'none'
+//         li7.style.display = 'none'
+//         li8.style.display = 'none'
+//         li9.style.display = 'none'
+//         li10.style.display = 'none'
+//         li11.style.display = 'none'
+//         li12.style.display = 'none'
+//     }
+
+// })
+
 
 // const menubutton = document.querySelector('#menu-button');
 // const main = document.querySelector('.main');
@@ -590,9 +551,21 @@ btn.addEventListener('click',()=>{
 //     }
 
 // })
+const person ={
+    name:'abner',
+    myname:function(){
+        console.log(`my name is ${this.name}`);
+    }
+}
+function myname () {
+    const img=this.img1
+    console.log(`my name is ${this.name}`);
+    console.log(`my name is ${this.li1}`);
+}
+person.myname()
+myname.call(product[23])
+
+phone(product[5].img1, product[5].name, product[5].li1, product[5].li2, product[5].li3, product[5].li4, product[5].li5, product[5].li6, product[5].li7, product[5].li8, product[5].li9, product[5].li10, product[5].li11, product[5].li12,product[5].p,product[5].img2)
 import app from "/index3.js";
-
-
-let random = Math.floor(Math.random() * product.length)
 
 app(product[5].img1, product[5].name, product[5].li1, product[5].li2, product[5].li3, product[5].li4, product[5].li5, product[5].li6, product[5].li7, product[5].li8,product[5].li9, product[5].li10, product[5].li11, product[5].li12)
