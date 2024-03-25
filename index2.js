@@ -71,6 +71,20 @@ export default phone
 
 const product =[
     {
+        img1: 'freeyond-m5a-8gb-256gb.webp',
+        name: 'freeyond M5a 8GB+256GB',
+        li1: '₦140,600.00',
+        li2: 'Availability: In Stock',
+        li3: 'Freeyond M5a Key Features',
+        li4: 'Sim: Dual SIM',
+        li5: 'Network: LTE',
+        li6: 'Display: 6.6 inches',
+        li7: 'Camera: 50MP',
+        li8: 'Battery: Li-Po 5000 mA',
+        img2: 'freeyond-m5a-8gb-256gb.webp'
+
+    },
+    {
         img1:'apple-iphone-15-plus-6gb-256gb-5g.jpg',
         name:'Apple iPhone 15 Plus 6GB+256GB 5G ',
         li1:'Availability: In Stock',
@@ -83,20 +97,6 @@ const product =[
         img2: 'apple-iphone-15-plus-6gb-256gb-5g.jpg'
     
         
-    },
-    {
-        img1: 'freeyond-m5a-8gb-256gb.webp',
-        name: 'freeyond M5a 8GB+256GB',
-        li1: '₦140,600.00',
-        li2: 'Availability: In Stock',
-        li3: 'Freeyond M5a Key Features',
-        li4: 'Sim: Dual SIM',
-        li5: 'Network: LTE',
-        li6: 'Display: 6.6 inches',
-        li7:'Camera: 50MP',
-        li8:'Battery: Li-Po 5000 mA',
-        img2:'freeyond-m5a-8gb-256gb.webp'
-
     },
     {
         img1: 'honor-x8a-8gb-128gb.jpg',

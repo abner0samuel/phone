@@ -1,35 +1,4 @@
-let search_img = document.querySelector('#search_img')
-let search = document.querySelector('#search')
-
-let search_item = [ ]
-
-search_img.addEventListener('click',()=>{
-    search_item.push(search.value )
-    search.style.placeholder = "search for phones"
-
-    search.value ='  '
-    console.log(search_item);
-    search.style.placeholder = "search for phones"
-
-    localStorage.setItem('myproduce',search_item)
-    let produce1 =localStorage.getItem('myproduce')
-    console.log(produce1);
-    
-
-    if (search_item.toString(search_item) === product[0].key ){
-        phone(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
-
-        console.log(product[0]);
-    } else if (search_item.toString(search_item) === product[1].name.value){
-        app(product[1].img1, product[1].name, product[1].li1, product[1].li2, product[1].li3, product[1].li4, product[1].li5, product[1].li6, product[1].li7, product[1].li8, product[1].li9, product[1].li10, product[1].li11, product[1].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
-
-    }
-})
-
-
-
-
-
+// button
 const btn1= document.querySelector('#btn1');
 const btn2= document.querySelector('#btn2');
 const btn3= document.querySelector('#btn3');
@@ -60,13 +29,18 @@ const btn27= document.querySelector('#btn27');
 const num_cart = document.querySelector('.num_cart');
 // btn1.addEventListener("click",()=>{
 //     num_of_cart()
-    
+
 //     btn1.style.backgroundColor = 'green'
 //     app(product[6].img1, product[6].name, product[6].li1, product[6].li2, product[6].li3, product[6].li4, product[6].li5, product[6].li6, product[6].li7, product[6].li8, product[6].li9, product[6].li10, product[6].li11, product[6].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
 
-    
+
 
 // });
+
+
+
+
+// lightmode and darkmode
 const button =document.querySelector('.button')
 const btnlightmode =document.querySelector('.btnlightmode');
 const btndarkmode =document.querySelector('.btndarkmode');
@@ -139,7 +113,9 @@ function app(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11
         const l11 = document.createElement('li')
         const l12 = document.createElement('li')
         const span = document.createElement('span')
+        const btn_div = document.createElement('div')
         const button = document.createElement('button');
+        const button1 = document.createElement('button');
         
        
         // new_root.style.display = 'block'
@@ -150,41 +126,65 @@ function app(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11
         img.src =img1
         id.appendChild(cartText)
         cartText.setAttribute('class', 'cartText')
+        id.appendChild(btn_div)
+        btn_div.setAttribute('class', 'btn_div')
         cartText.appendChild(h2)
         h2.setAttribute('class', 'cart_note')
         h2.innerText = name
-        cartText.appendChild(l1)
+        cartText.appendChild(ul)
+        ul.appendChild(l1)
         l1.appendChild(span)
         span.innerText = li1
-        cartText.appendChild(l2)
+        ul.appendChild(l2)
         l2.innerText = li2
-        cartText.appendChild(l3)
+        ul.appendChild(l3)
         l3.innerText = li3
-        cartText.appendChild(l4)
+        ul.appendChild(l4)
         l4.innerText = li4
-        cartText.appendChild(l5)
+        ul.appendChild(l5)
         l5.innerText = li5
-        cartText.appendChild(l6)
+        ul.appendChild(l6)
         l6.innerText = li6
-        cartText.appendChild(l7)
+        ul.appendChild(l7)
         l7.innerText = li7
-        cartText.appendChild(l8)
+        ul.appendChild(l8)
         l8.innerText = li8
-        cartText.appendChild(l9)
+        ul.appendChild(l9)
         l9.innerText = li9
-        cartText.appendChild(l10)
+        ul.appendChild(l10)
         l10.innerText = li10
-        cartText.appendChild(l11)
+        ul.appendChild(l11)
         l11.innerText = li11
-        cartText.appendChild(l12)
+        ul.appendChild(l12)
         l12.innerText =li12
         id.appendChild(iMg)
-        iMg.setAttribute('id', 'iimm')
-        iMg.src = img2
-        cartText.appendChild(button)
+
+        for ( let i in ul){
+            for(let j in i){
+
+                // if(j.value ===  undefined){
+                //     //  ul.remove(i)
+                //     console.log(j);
+                // }
+
+            }
+        }
+        // iMg.setAttribute('id', 'iimm')
+        // iMg.src = img2
+        btn_div.appendChild(button1)
+        button1.innerText = 'X'
+        button1.setAttribute('class','cart_btn1')
+        btn_div.appendChild(button)
         button.innerText='pay'
         button.setAttribute('class','cart_btn')
+        button1.addEventListener('click',()=>{
+            id.style.display = 'none'
+            
+        })
 }
+
+
+
 
 
 
@@ -654,10 +654,18 @@ const product = [
     }
 ]
 
-btn1.addEventListener("dblclick", () => {
+btn1.addEventListener("click", () => {
     app(product[23].img1, product[23].name, product[23].li1, product[23].li2, product[23].li3, product[23].li4, product[23].li5, product[23].li6, product[23].li7, product[23].li8, product[23].li9, product[23].li10, product[23].li11, product[23].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
-    btn1.style.backgroundColor = 'green'  
-    num_of_cart()
+    if (btn1.style.backgroundColor === 'blue'){
+        btn1.style.backgroundColor = 'green'
+        btn1.innerText = 'X'
+        num_of_cart()
+    }else{
+        btn1.style.backgroundColor = 'green'
+        
+    }
+    
+    
     
 
 });
@@ -828,13 +836,14 @@ btn27.addEventListener("click", () => {
     app(product[2].img1, product[2].name, product[2].li1, product[2].li2, product[2].li3, product[2].li4, product[2].li5, product[2].li6, product[2].li7, product[2].li8, product[2].li9, product[2].li10, product[2].li11, product[2].li12)   
 
 })
+
+num_cart.inner === 0
 function num_of_cart() {
-    function sum(a, b) {
-        return a + b
+    for (let i =0 ; i < num_cart.lenth;i++){
+        num_cart.innerText ==  i++
     }
-    let i = 0
-    i++
-    num_cart.innerText += i
+
+   
 }
 
 // geting the img 
@@ -883,13 +892,13 @@ function app2() {
     }
 }
 
-function phone(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12, p, img2) {
+function phone(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12, p) {
     const img1a = document.createElement('img')
-    img1a.setAttribute('class', 'img1')
+    img1a.setAttribute('class', 'img-img')
     img1a.src = img1
     const img2a = document.createElement('img')
-    img2a.setAttribute('class', 'img2')
-    img2a.src = img2
+    img2a.setAttribute('class', 'img2-img2')
+    img2a.src = img1
     const div_a = document.querySelector('.root')
     const div1 = document.createElement('div')
     div1.setAttribute('class', 'contener')
@@ -899,8 +908,8 @@ function phone(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li
     div2.setAttribute('class', 'contenerinout')
     const names = document.createElement('h2')
     names.setAttribute('class', 'heading')
-
-
+    app2()
+    
     const ul = document.createElement('ul')
     const l1 = document.createElement('li')
     const l2 = document.createElement('li')
@@ -1066,3 +1075,100 @@ image26.addEventListener('click', () => {
 image27.addEventListener('click',()=>{
     phone(product[22].img1, product[22].name, product[22].li1, product[22].li2, product[22].li3, product[22].li4, product[22].li5, product[22].li6, product[22].li7, product[22].li8, product[22].li9, product[22].li10, product[22].li11, product[22].li12)   
 })
+
+// makeing the search input
+
+function searchPhone(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12, img2) {
+    const id = document.createElement('div')
+    const img = document.createElement('img')
+    const iMg = document.createElement('img')
+    const cartText = document.createElement('div')
+    const h2 = document.createElement('h2')
+    const ul = document.createElement('ul')
+    const l1 = document.createElement('li')
+    const l2 = document.createElement('li')
+    const l3 = document.createElement('li')
+    const l4 = document.createElement('li')
+    const l5 = document.createElement('li')
+    const l6 = document.createElement('li')
+    const l7 = document.createElement('li')
+    const l8 = document.createElement('li')
+    const l9 = document.createElement('li')
+    const l10 = document.createElement('li')
+    const l11 = document.createElement('li')
+    const l12 = document.createElement('li')
+    const span = document.createElement('span')
+
+    // new_root.style.display = 'block'
+    new_root.appendChild(id)
+    id.setAttribute('class', 'one_root')
+    id.appendChild(img)
+    img.setAttribute('id', 'iimm')
+    img.src = img1
+    id.appendChild(cartText)
+    cartText.setAttribute('class', 'cartText')
+    cartText.appendChild(h2)
+    h2.setAttribute('class', 'cart_note')
+    h2.innerText = name
+    cartText.appendChild(l1)
+    l1.appendChild(span)
+    span.innerText = li1
+    cartText.appendChild(l2)
+    l2.innerText = li2
+    cartText.appendChild(l3)
+    l3.innerText = li3
+    cartText.appendChild(l4)
+    l4.innerText = li4
+    cartText.appendChild(l5)
+    l5.innerText = li5
+    cartText.appendChild(l6)
+    l6.innerText = li6
+    cartText.appendChild(l7)
+    l7.innerText = li7
+    cartText.appendChild(l8)
+    l8.innerText = li8
+    cartText.appendChild(l9)
+    l9.innerText = li9
+    cartText.appendChild(l10)
+    l10.innerText = li10
+    cartText.appendChild(l11)
+    l11.innerText = li11
+    cartText.appendChild(l12)
+    l12.innerText = li12
+    id.appendChild(iMg)
+    iMg.setAttribute('id', 'iimm')
+    iMg.src = img2
+    cartText.appendChild(button)
+}
+
+
+
+
+
+
+
+let search_img = document.querySelector('#search_img')
+let search = document.querySelector('#search')
+
+let search_item = []
+// document.addEventListener('keydown', (e) => {
+//     if (e.key == 'Enter') {
+//         search1()
+//     }
+// });
+search_img.addEventListener('click', ()=>{
+    search_item.push(search.value)
+    console.log(search_item);
+    console.log('click');
+
+    // localStorage.setItem('myproduce', search_item)
+    // let produce1 = localStorage.getItem('myproduce')
+    // if (search_item.toString(search_item) === product[0].name) {
+    //     searchPhone(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
+    //     console.log(true);
+    //     console.log(product[0]);
+    // } 
+})
+
+
+

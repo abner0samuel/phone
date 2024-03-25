@@ -61,6 +61,7 @@ body {
 .link:hover {
     border: 2px solid #fefefe;
     border-radius: 10px;
+    transition: all 10ms ease;
 }
 
 @media screen and (max-width:480px) {
@@ -158,15 +159,19 @@ hr {
 }
 
 /* style the shoping cart */
-.cart_btn {
+.cart_btn ,.cart_btn1{
     width: 100px;
     height: 50px;
     border-radius: 20px;
     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0, #131313, #09a1a1, rgb(221, 16, 159), hwb(120 2% 25%), #362bd3, rgba(231, 45, 12, 0.938))repeat-y;
-    font-size: 3.5rem;
     color: white;
-    margin-left: 25pc;
+    font-size: 2.5rem;
 
+}
+.btn_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cartText {
@@ -194,6 +199,7 @@ hr {
 
 li {
     font-size: 2em;
+    list-style: none;
 }
 
 .cart_note {
@@ -225,7 +231,7 @@ li {
     background-color: white;
     display: flex;
     cursor: pointer;
-    display: flexbox;
+    display: flex;
 
 }
 
@@ -253,6 +259,9 @@ li {
 /* animateing  and styleing the image */
 .cart {
     width: 100px;
+}
+.cart:hover{
+    
 }
 
 .num_cart {
