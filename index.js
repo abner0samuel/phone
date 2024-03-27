@@ -237,7 +237,7 @@ menubutton.addEventListener('click',()=>{
 const product = [
     {
         img1: 'apple-iphone-15-plus-6gb-256gb-5g.jpg',
-        name: 'Apple iPhone 15 Plus ',
+        name: 'apple 15',
         li1: 'Availability: In Stock',
         li2: 'SKU: 302442',
         li3: 'Apple iPhone 15 Plus Features',
@@ -267,7 +267,7 @@ const product = [
     },
     {
         img1: 'honor-x8a-8gb-128gb.jpg',
-        name: 'Honor X8a 8GB+128GB',
+        name: 'honor X8a',
         li1: '₦246,800.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302100',
@@ -281,7 +281,7 @@ const product = [
     },
     {
         img1: 'infinix-note-12-pro-5g-x671b-128gb-8gb.png',
-        name: 'INFINIX NOTE 12 PRO 5G X671B 128GB+8GB',
+        name: 'infinix note 12 pro',
         li1: '₦197,400.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 90007',
@@ -297,7 +297,7 @@ const product = [
     },
     {
         img1: 'infinix-smart-8-64gb-4gb-4g (1).webp',
-        name: 'Infinix Smart 8 64GB+4GB 4G Infinix Smart 8 64GB+4GB 4G',
+        name: 'Infinix Smart 8',
         li1: 'Infinix Smart 8 64GB+4GB 4G',
         li2: '₦86,200.00',
         li3: 'Availability: In Stock',
@@ -314,7 +314,7 @@ const product = [
     },
     {
         img1: 'shopping (1).webp',
-        name: 'Apple iPhone 15 Pro 128GB Single Sim',
+        name: 'iphone 15 pro',
         li1: '₦1,670,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302423',
@@ -333,7 +333,7 @@ const product = [
     },
     {
         img1: 'itel-a04-2gb-32gb.webp',
-        name: 'ITEL A04',
+        name: 'itel A04',
         li1: 'ITEL A04 2GB+32GB',
         li2: '₦58,000.00',
         li3: 'Availability: In Stock',
@@ -351,7 +351,7 @@ const product = [
     },
     {
         img1: 'shopping.webp',
-        name: 'ITEL S23 4GB+128GB',
+        name: 'itel S23',
         li1: '₦80,400.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302109',
@@ -369,7 +369,7 @@ const product = [
     },
     {
         img1: 'download (1).webp',
-        name: 'ITEL A60 2GB+32GB',
+        name: 'itel A60',
         li1: '₦55,000.00',
         li2: 'Availability: Out Of Stock',
         li3: 'SKU: 301812',
@@ -382,7 +382,7 @@ const product = [
     },
     {
         img1: 'nokia-c21-2gb-32gb.png',
-        name: 'Nokia C21 2GB+32GB',
+        name: 'nokia C21',
         li1: '₦88,300.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 61203',
@@ -404,7 +404,7 @@ const product = [
     },
     {
         img1: 'oppo-a58-8gb-128gb.jpg',
-        name: 'Oppo A58 8GB+128GB',
+        name: 'oppo A58',
         li1: '₦164,900.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302339',
@@ -419,7 +419,7 @@ const product = [
     },
     {
         img1: '20pro_predawn_black_1.png',
-        name: 'tecno-camon-19-pro-8gb-256gb-ci7n-5g',
+        name: 'tecno camon 19 ',
         li1: '₦246,800.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302100',
@@ -434,7 +434,7 @@ const product = [
     },
     {
         img1: 'tecno-camon-19-pro-8gb-256gb-ci7n-5g.jpg',
-        name: 'TECNO CAMON 19 PRO 8GB+256GB (CI7n) 5G',
+        name: 'tecno camon 19 PRO',
         li1: '₦212,800.00₦252,800.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 11343',
@@ -443,7 +443,7 @@ const product = [
         li6: 'Front Camera: 16 MP',
         li7: 'Battery: Non-Removable Lithium-Polymer 5000 mAh.',
         li8: 'Network: GSM / HSPA/ LTE/ 5G',
-        name: 'REVIEW ON CAMON 19 PRO',
+        p: 'REVIEW ON CAMON 19 PRO',
         p: `'The Camon 19 Pro has a 6.8" Full HD+ display with a refresh rate of 120 Hz. There is a single punch hole for the
                 selfie camera, while the back has a design of diamond coating, mimicking 200 million crystals. The main camera
                 setup is in a double ring, but there are three shooters.
@@ -455,7 +455,7 @@ const product = [
     },
     {
         img1: 'xiaomi-poco-m4-pro-6gb-128gb.jpg',
-        name: 'XIAOMI POCO M4 PRO 6GB+128GB',
+        name: 'POCO M4 PRO',
         li1: '₦140,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 88528',
@@ -469,7 +469,7 @@ const product = [
     },
     {
         img1: 'th (9).jpg',
-        name: 'Samsung Galaxy S22 5G 8GB+128GB',
+        name: 'Samsung Galaxy S22',
         li1: '₦607,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 300819',
@@ -487,7 +487,7 @@ const product = [
     },
     {
         img1: 'th (4).jpg',
-        name: 'Samsung Galaxy A13 4GB+128GB',
+        name: 'Samsung Galaxy',
         li1: '₦133,900.00',
         li2: 'Availability: In Of Stock',
         li3: 'SKU: 300911',
@@ -501,7 +501,7 @@ const product = [
     },
     {
         img1: 'th (3).jpg',
-        name: 'samsung Galaxy A54 8GB+128GB 5G',
+        name: 'samsung Galaxy A54',
         li1: '₦509,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 301905',
@@ -515,7 +515,7 @@ const product = [
     },
     {
         img1: 'samsung-galaxy-s23-ultra-12gb-512gb-1-year-warranty.webp',
-        name: 'SAMSUNG GALAXY S23 ULTRA 12GB+512GB',
+        name: 'SAMSUNG GALAXY S23',
         li1: '₦990,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 301755-1',
@@ -530,7 +530,7 @@ const product = [
     },
     {
         img1: 'samsung-galaxy-z-flip-5-512gb.webp',
-        name: 'Samsung_Galaxy_Z Flip 5 512GB',
+        name: 'Samsung_Galaxy_Z Flip',
         li1: '₦1,367,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 3022351',
@@ -545,7 +545,7 @@ const product = [
     },
     {
         img1: 'samsung-galaxy-z-fold-5-1tb.webp',
-        name: 'Samsung Galaxy Z Fold 5 1TB',
+        name: 'Samsung Galaxy Z Fold',
         li1: '₦2,519,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302244',
@@ -560,7 +560,7 @@ const product = [
     },
     {
         img1: 'download (6).webp',
-        name: 'TECNO SPARK 10C (KI5K) 128GB+4GB',
+        name: 'TECNO SPARK 10C',
         li1: 'price ₦94,900.00',
         li2: 'Availability: In Stock',
         li2: 'SKU: 301829',
@@ -572,7 +572,7 @@ const product = [
     },
     {
         img1: 'vivo-v27-5g-8gb-256gb.jpg',
-        name: 'Vivo_V27 5G 8GB+256GB',
+        name: 'Vivo_V27',
         li1: '₦359,900.00',
         li2: 'Availability: In Stock',
         li3: 'SKU:302012',
@@ -587,7 +587,7 @@ const product = [
     },
     {
         img1: 'vivo-y16-4gb-64gb.jpg',
-        name: 'VIVO Y16 4GB+64GB',
+        name: 'VIVO Y16',
         li1: '₦114,000.00',
         li2: 'Availability: In Stock',
         li3: 'SKU:301569',
@@ -600,7 +600,7 @@ const product = [
     },
     {
         img1: '118566_1689599261.webp',
-        name: 'XIAOMI REDMI NOTE 12 PRO (6GB+128GB)',
+        name: 'REDMI NOTE 12',
         li1: '₦217,800.00₦262,800.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 301974',
@@ -617,7 +617,7 @@ const product = [
     },
     {
         img1: 'download (5).webp',
-        name: 'Home XIAOMI REDMI 12C 4GB+128GB',
+        name: 'REDMI 12C',
         li1: '₦95,300.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 301813',
@@ -634,7 +634,7 @@ const product = [
     },
     {
         img1: 'download (2).webp',
-        name: 'XIAOMI REDMI A2 PLUS 3GB+64GB',
+        name: 'REDMI A2',
         li1: '₦68,800.00₦76,800.00',
         li2: 'Availability: In Stock',
         li3: 'SKU: 302200',
@@ -1150,24 +1150,140 @@ function searchPhone(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li
 let search_img = document.querySelector('#search_img')
 let search = document.querySelector('#search')
 
-let search_item = []
+let search_item =" "
 // document.addEventListener('keydown', (e) => {
 //     if (e.key == 'Enter') {
 //         search1()
 //     }
 // });
 search_img.addEventListener('click', ()=>{
-    search_item.push(search.value)
+    search_item = search.value
     console.log(search_item);
+    console.log(search_item,typeof(search_item));
+    console.log(product[0].name,typeof(product[0].name));
+    function nums(num1,num2) {
+        return num1 == num2
+        
+    }
+   
+
+  console.log(nums(search_item,product[0].name));
     console.log('click');
+    const second_root = document.querySelector('.second_root')
+    function app3() {
+        if (mean.style.display === 'block') {
+            const h1 = document.querySelector('.h1')
+            
+            mean.style.display = 'none'
+            div_a.style.display = 'none'
+            h1.innerText = search_item
+            new_root.style.display = 'none'
+            second_root.style.display='block'
+        } else {
+            const h1 = document.querySelector('.h1')
+            cart.src = 'cart.jpg'
+            mean.style.display = 'block'
+            div_a.style.display = 'none'
+            second_root.style.display='none'
+            h1.innerText = 'looking for the best phones we have it here just for you'
+        }
+    }
+    
+function searchapp(img1, name, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12 ,img2){
+    const id = document.createElement('div')
+    const img = document.createElement('img')
+    const iMg = document.createElement('img')
+    const cartText = document.createElement('div')
+    const h2 = document.createElement('h2')
+    const ul = document.createElement('ul')
+    const l1 = document.createElement('li')
+    const l2 = document.createElement('li')
+    const l3 = document.createElement('li')
+    const l4 = document.createElement('li')
+    const l5 = document.createElement('li')
+    const l6 = document.createElement('li')
+    const l7 = document.createElement('li')
+    const l8 = document.createElement('li')
+    const l9 = document.createElement('li')
+    const l10 = document.createElement('li')
+    const l11 = document.createElement('li')
+    const l12 = document.createElement('li')
+    const span = document.createElement('span')
+    app3()
+    
+   
+    // new_root.style.display = 'block'
+    second_root.appendChild(id)
+    id.setAttribute('class', 'one_root')
+    id.appendChild(img)
+    img.setAttribute('id', 'iimm')
+    img.src =img1
+    id.appendChild(cartText)
+    cartText.setAttribute('class', 'cartText')
+    id.appendChild(btn_div)
+    btn_div.setAttribute('class', 'btn_div')
+    cartText.appendChild(h2)
+    h2.setAttribute('class', 'cart_note')
+    h2.innerText = name
+    cartText.appendChild(ul)
+    ul.appendChild(l1)
+    l1.appendChild(span)
+    span.innerText = li1
+    ul.appendChild(l2)
+    l2.innerText = li2
+    ul.appendChild(l3)
+    l3.innerText = li3
+    ul.appendChild(l4)
+    l4.innerText = li4
+    ul.appendChild(l5)
+    l5.innerText = li5
+    ul.appendChild(l6)
+    l6.innerText = li6
+    ul.appendChild(l7)
+    l7.innerText = li7
+    ul.appendChild(l8)
+    l8.innerText = li8
+    ul.appendChild(l9)
+    l9.innerText = li9
+    ul.appendChild(l10)
+    l10.innerText = li10
+    ul.appendChild(l11)
+    l11.innerText = li11
+    ul.appendChild(l12)
+    l12.innerText =li12
+    id.appendChild(iMg)
+
+    for ( let i in ul){
+        for(let j in i){
+
+            // if(j.value ===  undefined){
+            //     //  ul.remove(i)
+            //     console.log(j);
+            // }
+
+        }
+    }
+    // iMg.setAttribute('id', 'iimm')
+    // iMg.src = img2
+   
+}
+
+
+
+
+
 
     // localStorage.setItem('myproduce', search_item)
     // let produce1 = localStorage.getItem('myproduce')
-    // if (search_item.toString(search_item) === product[0].name) {
-    //     searchPhone(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12)    // app('shopping (1).webp','Apple iPhone 15 Pro 128GB Single Sim')
-    //     console.log(true);
-    //     console.log(product[0]);
-    // } 
+  
+
+
+    if (search_item ==product[0].name) {
+        searchapp(product[0].img1, product[0].name, product[0].li1, product[0].li2, product[0].li3, product[0].li4, product[0].li5, product[0].li6, product[0].li7, product[0].li8, product[0].li9, product[0].li10, product[0].li11, product[0].li12) 
+    }else if(search_item == product[1].name){
+        searchapp(product[1].img1, product[1].name, product[1].li1, product[1].li2, product[1].li3, product[1].li4, product[1].li5, product[1].li6, product[1].li7, product[1].li8, product[1].li9, product[1].li10, product[1].li11, product[1].li12)
+    }
+   
 })
 
 
