@@ -426,7 +426,9 @@ const product = [
 // let img = document.createElement("img");
 // let name = document.querySelector("[name]")
 // thumbnail.appendChild(img)
-
+for(let i =0; i <product.length;i++){
+    console.log(i);
+}
 // // const products = product[1].map
 // // img.src = product.img1
 // function app (product){
@@ -445,3 +447,51 @@ product.forEach(element1 => {
     // });
 });
 // console.log(product[0].img1);
+
+
+let item = document.querySelector("[item]");
+console.log(item);
+item.addEventListener("click",(e)=>{
+    let target = e.target
+    if(e.target ==="input"){
+        console.log(e.target);
+    }
+})
+window.onscroll = () =>{
+    if(window.innerHeight + window.scrollY >= document.body.offsetHeight ){
+        document.querySelector(".mainContainer").style.backgroundColor= "red"
+    }else{
+        document.querySelector(".mainContainer").style.backgroundColor = "#0f1547"
+    }
+}
+//btn
+// document.addEventListener("DOMContentLoaded",()=>{
+//     document.querySelectorAll(".btns").forEach(button =>{
+//         button.onclick = function(){
+//             button.style.backgroundColor = "green"
+//             let i = 0
+//             function number (){
+//                 i++
+//             }
+//             console.log(number());
+//             history.pushState({season:number()},"",`abner${number()}`)
+//         }
+//     })
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
