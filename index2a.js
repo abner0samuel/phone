@@ -1,7 +1,3 @@
-
-// create the produces for shoping cart
-
-
 const product = [
     {
         img1: 'apple-iphone-15-plus-6gb-256gb-5g.jpg',
@@ -421,11 +417,33 @@ const product = [
 
     }
 ]
-// let thumbnail =document.querySelector("[thumbnail]");
-// let item = document.querySelector("[item]");
-// let img = document.createElement("img");
-// let name = document.querySelector("[name]")
-// thumbnail.appendChild(img)
+let thumbnail =document.querySelector("[thumbnail]");
+let item = document.querySelectorAll("[item]");
+let img = document.querySelectorAll("img");
+let name = document.querySelectorAll("[name]")
+document.addEventListener("DOMContentLoaded",()=>{
+    for(item in product){
+        for(key in item){
+            console.log(key,item);
+        }
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 for(let i =0; i <product.length;i++){
     console.log(i);
 }
@@ -449,7 +467,7 @@ product.forEach(element1 => {
 // console.log(product[0].img1);
 
 
-let item = document.querySelector("[item]");
+
 console.log(item);
 item.addEventListener("click",(e)=>{
     let target = e.target
@@ -465,19 +483,19 @@ window.onscroll = () =>{
     }
 }
 //btn
-// document.addEventListener("DOMContentLoaded",()=>{
-//     document.querySelectorAll(".btns").forEach(button =>{
-//         button.onclick = function(){
-//             button.style.backgroundColor = "green"
-//             let i = 0
-//             function number (){
-//                 i++
-//             }
-//             console.log(number());
-//             history.pushState({season:number()},"",`abner${number()}`)
-//         }
-//     })
-// })
+document.addEventListener("DOMContentLoaded",()=>{
+    document.querySelectorAll(".btns").forEach(button =>{
+        button.onclick = function(){
+            button.style.backgroundColor = "green"
+            let i = 0
+            function number (){
+                i++
+            }
+            console.log(number());
+            history.pushState({season:number()},"",`abner${number()}`)
+        }
+    })
+})
 
 
 

@@ -60,6 +60,11 @@ body::-webkit-scrollbar{
         line-height: inherit;
         border:var(--bgColor) 2px solid;
     }
+    #search:focus{
+        outline: 1.45px solid white;
+        outline-offset: 2px;
+    }
+    }
     #search::placeholder{
         color:rgb(173, 176, 202);
         font: bolder 24px italic;
@@ -253,7 +258,7 @@ body::-webkit-scrollbar{
         box-shadow: #fff 3px 2px 5px 5px;
     }
 
-}
+
 @media screen and (max-width:700px){
     .navber{
         width: 100%;
